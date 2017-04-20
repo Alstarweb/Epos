@@ -20,7 +20,9 @@ By default successfully exported orders cannot be exported again however there i
 
 For testing SOAP based requests and responses I reccommend using the SoapUI application before starting the PHP integration.
 
+The Epos module contains two custom tables to track the order and stock processing, it also sends an email to email addresses set in the configuration.
 
+There is an option to run a full reindex after the stock update, in the default Magento 2 a reindex is not required because updating the stock will trigger a partial reindex of the product updated however with other custom modules a reindex can be required. 
 
 
 
